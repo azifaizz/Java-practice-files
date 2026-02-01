@@ -16,7 +16,7 @@ public class Armstrng {
         if (result == og) {
             System.out.println("Armstrong");
         } else {
-            System.out.println("Not Armstrong");
+            System.out.println("Not ArmstronNg");
         }
     }
 }
