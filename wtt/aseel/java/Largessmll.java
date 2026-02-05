@@ -1,5 +1,5 @@
-package Array.java;
-public class ReverseNumber {
+package wtt.aseel.java;
+public class Largessmll {
     public static void main(String[] args) {
         int[]arr={7,2,9,4,1,6};
         int smallest=arr[0];
