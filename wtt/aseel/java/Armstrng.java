@@ -10,7 +10,7 @@ public class Armstrng {
         int result = 0;
         while (num != 0) {
             int digit = num % 10;
-            result = result + (digit * digit * digit); //if you want to check 4 digit number add one more(digit) in that bracket
+            result = result + (digit * digit * digit);
             num /= 10;
         }
         if (result == og) {

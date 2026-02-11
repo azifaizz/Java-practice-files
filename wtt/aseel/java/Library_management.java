@@ -9,19 +9,16 @@ public class Library_management {
         int id;
         String name;
         boolean isIssued;
-
         Book(int id, String name) {
             this.id = id;
             this.name = name;
             this.isIssued = false;
         }
     }
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<Book> books = new ArrayList<>();
-
         while (true) {
             System.out.println("\n=== Library Management System ===");
             System.out.println("1. Add Book");
@@ -31,16 +28,12 @@ public class Library_management {
             System.out.println("5. Return Book");
             System.out.println("6. Exit");
             System.out.print("Enter choice: ");
-
             int choice = sc.nextInt();
-
             switch (choice) {
-
                 case 1:
                     System.out.print("Enter Book ID: ");
                     int id = sc.nextInt();
                     sc.nextLine();
-
                     boolean exists = false;
                     for (int i = 0; i < books.size(); i++) {
                         if (books.get(i).id == id) {
@@ -48,19 +41,15 @@ public class Library_management {
                             break;
                         }
                     }
-
                     if (exists) {
                         System.out.println("Book ID already exists.");
                         break;
                     }
-
                     System.out.print("Enter Book Name: ");
                     String name = sc.nextLine();
-
                     books.add(new Book(id, name));
                     System.out.println("Book added successfully.");
                     break;
-
                 case 2:
                     if (books.isEmpty()) {
                         System.out.println("No books in library.");
